@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Starbucks Login Page</title>
+    <!-- Link To Css -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="back-container">
+        <button class="back-icon" onclick="redirectToHome()">
+            <i class='bx bxs-chevron-left'></i>
+        </button>
+    </div>
+    <div class="wrapper">
+        <div id="loginForm"></div>
+        <form action="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" onclick="highlightInputOnFocus()" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+        <div id="messageContainer"></div>
+    </div>
+    </div>
+    <!-- Link To Custom Js -->
+    <script src="main.js"></script>
+</body>
+</html>
